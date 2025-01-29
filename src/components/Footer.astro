@@ -1,2 +1,16 @@
-<footer class="fixed bottom-0 w-full bg-gray-800 text-white p-4"></footer>
-<!-- <p>Este es el Footer</p> -->
+---
+import FooterLink from "./FooterLink.astro";
+---
+
+<footer class="fixed bottom-0 w-full bg-gray-800 text-white p-6">
+    <div class="grid grid-cols-1 divide-y-2 items-center justify-center md:flex md:justify-center md:divide-x-0">
+        <FooterLink href="/politicas/politicas-de-privacidad" text="Políticas de privacidad" />
+        <FooterLink href="/politicas/politica-de-reembolso" text="Política de reembolso" />
+        <FooterLink href="/politicas/politica-de-envio" text="Política de envío" />
+        <FooterLink href="/politicas/terminos-del-servicio" text="Términos del servicio" />
+        <FooterLink href="/politicas/informacion-de-contacto" text="Información de contacto" />
+    </div>
+    <p class="text-center mt-6 text-xs text-gray-200">
+        Copyright © 2025 Mercadery. All Rights Reserved.
+    </p>
+</footer>

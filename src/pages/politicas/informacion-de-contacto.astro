@@ -1,0 +1,10 @@
+---
+import PoliciesLayout from '../../layouts/PoliciesLayout.astro'
+import data from './data.json'
+const title = 'Información de contacto'
+
+---
+<PoliciesLayout title={title}>
+    <p>Si tienes alguna pregunta, comentario o sugerencia, no dudes en contactarnos.</p>
+    <p>Correo electrónico: <a href=`mailto:${data.email}`>{data.email}</a></p>
+</PoliciesLayout>
